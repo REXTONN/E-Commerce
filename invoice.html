@@ -1,0 +1,81 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="CSS/invoice.css">
+        <script defer src="./JS/invoice.js"></script>
+        <script src="jquery/jquery-3.6.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+	<body>
+		<section id="backarrow" class="no-print">
+			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+		</section>
+		<section id="section-to-print">
+		<header>
+			<h1>Invoice</h1>
+			<address contenteditable>
+				<p class="custname"></p>
+				<p class="custaddress"></p>
+				<p class="custphno"></p>
+			</address>
+			<span><img alt="" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/sports-shop-2579310-2148930.png"></span>
+		</header>
+		<hr>
+
+		<article>
+			<h1>Recipient</h1>
+			<address contenteditable>
+				<p>SPORT SHOP</p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span>Transaction</span></th>
+					<td><span class="transaction_id"></span></td>
+				</tr>
+				<tr>
+					<th><span>Date</span></th>
+					<td><span class="date"></span></td>
+				</tr>
+				<tr>
+					<th><span>Amount </span></th>
+					<td><span id="prefix">Rs </span><span class="amount"></span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Item</span></th>
+						<th><span contenteditable>Description</span></th>
+						<th><span contenteditable>Rate</span></th>
+						<th><span contenteditable>Quantity</span></th>
+						<th><span contenteditable>Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<table class="balance">
+				<tr>
+					<th><span contenteditable>Amount Paid</span></th>
+					<td><span data-prefix></span>Rs.<span class="amount"></span></td>
+				</tr>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1><span contenteditable>Additional Notes</span></h1>
+			<div contenteditable>
+				<p></p>
+			</div>
+		</aside>
+		</section>
+		<button class="print-btn" onclick=window.print()>Print <i class="fas fa-print"></i></button>
+	</body>
+</html>
