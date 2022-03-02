@@ -1,0 +1,38 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+    font-size: 13px;
+}
+
+/* HomeSection */
+#home{
+height: 450px;
+padding: 3px 31px;
+
+}
+#home::before{
+    height: 382px;
+}
+#home p{
+    font-size: 13px;
+
+}
+/* Services section */
+#services{
+flex-direction: column;
+}
+#services.box{
+
+}
+/* Client section */
+#clients{
+    overflow: hidden;
+}
+/* Contact us section */
+
+/* Footer */
+
+/* Utility Class */
+.h-primary{
+    font-size: 26px;
+}

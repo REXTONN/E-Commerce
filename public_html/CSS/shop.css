@@ -1,0 +1,19 @@
+/*Card Layout*/
+.card-layout
+{
+    display: inline-flex;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+#backarrow
+{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-size: 25px;
+}
+.card-img-top
+{
+    height: 200px;
+    width: 250px;
+}
